@@ -25,11 +25,14 @@
                 <h1>Lista della spesa</h1>
             </header>
             <!-- /intestazione -->
-            
+
             <div class="container">
                 <ol>
-                    <li v-for="(item, index) in lista">{{ item }}</li>
+                    <li v-for="(item, index) in lista">{{ item }} <span @click="deleteItem(index)">X</span></li>
                 </ol>
+                <div class="input-text">
+                    <input type="text" v-model="newItem"> <button>Invio</button>
+                </div>
             </div>
         </div>
         
