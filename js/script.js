@@ -8,11 +8,15 @@ var app = new Vue(
         data: {
             itemIndex: null,
             lista: ["Pane", "Latte","Corn Flakes"],
-            addItem: "",
+            newItem: "",
         },
         methods: {
             deleteItem: function(itemIndex) {
                 this.lista.splice(itemIndex, 1);
+            },
+            addItem: function() {
+                this.lista.push(this.newItem);
+                this.newItem = "";
             },
         }
     }
