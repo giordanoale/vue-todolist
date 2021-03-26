@@ -7,7 +7,7 @@ var app = new Vue(
         el:"#root",
         data: {
             itemIndex: null,
-            lista: ["Pane", "Latte","Corn Flakes"],
+            lista: ["Feel the force", "Build a Lightsaber","Use the force","Kiss your sister", "Kill the Emperor"],
             newItem: "",
         },
         methods: {
