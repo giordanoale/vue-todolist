@@ -31,7 +31,7 @@
                     <li v-for="(item, index) in lista">{{ item }} <span @click="deleteItem(index)">X</span></li>
                 </ol>
                 <div class="input-text">
-                    <input type="text" v-model="newItem"> <button @click="addItem">Invio</button>
+                    <input type="text" v-model="newItem" @keydown.13="addItem"> <button @click="addItem">Invio</button>
                 </div>
             </div>
         </div>
